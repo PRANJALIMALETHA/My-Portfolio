@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        @font-face {
+            font-family: rubik;
+            src: url(../Rubik/Rubik-VariableFont_wght.ttf);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: rubik;
+        }
+
+        .cont {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Creates a grid with 3 equal columns */
+            gap: 15px; /* Space between grid items */
+            padding: 15px; /* Padding around the grid */
+        }
+
+        .container {
+            border-radius: 10px;
+            height: 250px; /* Reduced height for smaller cards */
+            width: 100%; /* Full width of the grid column */
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6); /* Slightly smaller shadow */
+            padding: 10px; /* Reduced padding */
+            box-sizing: border-box; /* Includes padding in width/height calculations */
+            background-color: #fff; /* Background color for the card */
+            overflow: hidden; /* Ensures content stays within bounds */
+        }
+
+        img {
+            height: 120px; /* Adjusted image height */
+            width: 100%; /* Makes the image responsive */
+            border-radius: 10px;
+            object-fit: cover; /* Ensures image covers the area without distortion */
+        }
+
+        p {
+            font-size: 18px; /* Adjusted font size */
+            font-weight: 700;
+            line-height: 24px;
+            margin: 10px 0; /* Adjusts top and bottom margins */
+        }
+
+        hr {
+            width: 75%;
+            border: 1px solid rgba(128, 128, 128, 0.27);
+            margin: 10px 0; /* Adds margin to the top and bottom of the hr */
+        }
+
+        .price-container {
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Space between price elements */
+        }
+
+        .price {
+            font-size: 16px; /* Adjusted font size */
+            font-weight: 700;
+            line-height: 24px;
+        }
+
+        .price-current {
+            color: rgb(102, 116, 204);
+        }
+
+        .price-original {
+            color: rgb(119, 124, 133);
+            text-decoration: line-through;
+        }
+
+        .offer {
+            background-color: #1DD1A1;
+            color: #fff;
+            padding: 4px;
+            border-radius: 3px;
+            font-weight: 700;
+            font-size: 12px; /* Adjusted font size */
+            line-height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <H1>Certificates of participation</H1>
+    <div class="cont">
+      
+        <div class="container">
+            <img src="./Images/myntra.png" alt="Course Image" />
+            <p>This certificate provided by Myntra is proof of the sheer grit, hard work, & dedication </p>
+            <hr />
+            <a href="https://unstop.com/certificate-preview/ed856093-5f92-473e-ad9e-5a1c4853559d?utm_campaign=">
+                 <i class="fas fa-certificate"></i>
+            </a>
+        </div>
+
+        <div class="container">
+            <img src="./Images/flipkart.png" alt="Course Image" />
+            <p>This certificate provided by Flipkart is proof of the sheer grit, hard work, & dedication </p>
+            <hr />
+            <a href="https://unstop.com/certificate-preview/fa22918c-2f36-4f94-9e8f-60e0cbabdb68?utm_campaign=">
+                <i class="fas fa-certificate"></i>
+           </a>
+        </div>
+
+        <div class="container">
+            <img src="Images/amazon.png" alt="Course Image" />
+            <p>she has participated in the HackOn With Amazon - Season 4.</p>
+            <hr/>
+            <a href="https://unstop.com/certificate-preview/73fed561-4e66-41c5-a8fe-b32df88185bb?utm_campaign=">
+                <i class="fas fa-certificate"></i>
+           </a>
+            
+        </div>
+
+        <div class="container">
+            <img src="Images/flipkart.png" alt="Course Image" />
+            <p> Participation in E-tech quiz </p>
+            <hr/>
+            <a href="https://unstop.com/certificate-preview/862741b8-493e-4457-b0ea-da77097aded8?utm_campaign="></a>
+                <i class="fas fa-certificate"></i>
+           </a>
+            
+        </div>
+
+        <div class="container">
+            <img src="Screenshot (2154).png" alt="Course Image" />
+            <p>I participated in AccioJob's Coding Bootcamp from 26th July to 28th July, demonstrating commitment and active involvement in the learning process.</p>
+            <hr />
+            <a href="Screenshot (2154).png">
+                <i class="fas fa-certificate"></i>
+            </a>
+        </div>
+
+        <div class="container">
+            <img src="Images/fee.svg" alt="Course Image" />
+            <p> Web design certification</p>
+            <hr/>
+
+            <a href="https://www.freecodecamp.org/certification/pm2138/responsive-web-design">
+            <i class="fas fa-certificate"></i>
+            </a>
+          
+        </div>
+    </div>
+</body>
+
+</html>
